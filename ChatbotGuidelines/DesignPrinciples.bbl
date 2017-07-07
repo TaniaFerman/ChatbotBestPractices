@@ -1,5 +1,21 @@
 \begin{thebibliography}{1}
 
+\bibitem{reichman1985getting}
+Rachel Reichman.
+\newblock {\em Getting computers to talk like you and me: discourse context,
+  focus, and semantics}.
+\newblock MIT press Cambridge, MA., 1985.
+
+\bibitem{WhatwecanlearnfromAlexasmistakes}
+Jonathan Bree.
+\newblock What we can learn from alexa's mistakes.
+\newblock Chatbots Magazine, February 2017.
+
+\bibitem{allen1978conversation}
+Donald~E. Allen and Rebecca~F. Guy.
+\newblock {\em Conversation analysis: the sociology of talk}, volume 200.
+\newblock Walter de Gruyter, The Hague, 1978.
+
 \bibitem{HeuristicsWebPage}
 Kevin Scott.
 \newblock Usability heuristics for bots.
@@ -9,5 +25,9 @@ Kevin Scott.
 Ben Shneiderman and Pattie Maes.
 \newblock Direct manipulation vs. interface agents.
 \newblock {\em interactions}, 4(6):42--61, 1997.
+
+\bibitem{poncho2017}
+Poncho Inc.
+\newblock Poncho, 2017.
 
 \end{thebibliography}

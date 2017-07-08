@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{Shevat2017}
+Amir Shevat.
+\newblock {\em Designing Bots Creating Conversational Experiences}.
+\newblock O'Reilly Media, May 2017.
+
 \bibitem{reichman1985getting}
 Rachel Reichman.
 \newblock {\em Getting computers to talk like you and me: discourse context,
@@ -29,5 +34,9 @@ Ben Shneiderman and Pattie Maes.
 \bibitem{poncho2017}
 Poncho Inc.
 \newblock Poncho, 2017.
+
+\bibitem{1-800-Flowers}
+TopBots.
+\newblock 1-800-flowers, 2017.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Shevat2017}
 Amir Shevat.
@@ -16,10 +16,31 @@ Jonathan Bree.
 \newblock What we can learn from alexa's mistakes.
 \newblock Chatbots Magazine, February 2017.
 
+\bibitem{merriam-webster}
+Simon and Schuster.
+\newblock {\em The new merriam-webster pocket dictionary}.
+\newblock Richmond Hill, Ont, 1971.
+
+\bibitem{CaseStudy}
+Robert Sens.
+\newblock Designing a chatbot conversation.
+\newblock Behance, May 2016.
+
+\bibitem{CheatSheet}
+Anna Lurchenko.
+\newblock Cheat sheet: All facebook messenger bots interactions.
+\newblock Chatbots Magazine, February 2016.
+
 \bibitem{allen1978conversation}
 Donald~E. Allen and Rebecca~F. Guy.
 \newblock {\em Conversation analysis: the sociology of talk}, volume 200.
 \newblock Walter de Gruyter, The Hague, 1978.
+
+\bibitem{carousel}
+Kara Pernice.
+\newblock Carousel usability: Designing an effective ui for websites with
+  content overload.
+\newblock Nielsen Norman Group, September 2013.
 
 \bibitem{HeuristicsWebPage}
 Kevin Scott.

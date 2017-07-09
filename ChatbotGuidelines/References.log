@@ -1,0 +1,77 @@
+This is MetaPost, version 1.902 (TeX Live 2014) (kpathsea version 6.2.0)  8 JUL 2017 18:10
+**References.bib
+(/usr/local/texlive/2014/texmf-dist/metapost/base/mpost.mp
+(/usr/local/texlive/2014/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./References.bib
+! A statement can't begin with `@'.
+<to be read again> 
+                   @
+l.12 @
+      misc{CaseStudy,
+I was looking for the beginning of a new statement.
+If you just proceed without changing anything, I'll ignore
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   @
+l.12 @
+      misc{CaseStudy,
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> Conversation.analysis
+! Isolated expression.
+<to be read again> 
+                   ;
+l.101 ... = {Communication; Conversation analysis;
+                                                   Psychological aspects},
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> Psychological.aspects
+! Isolated expression.
+<to be read again> 
+                   }
+l.101 ...ersation analysis; Psychological aspects}
+                                                  ,
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   }
+l.101 ...ersation analysis; Psychological aspects}
+                                                  ,
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+)
+! File ended while scanning to the end of the statement.
+<inserted text> 
+                ;
+<*> References.bib
+                  
+A previous error seems to have propagated,
+causing me to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+! Emergency stop.
+<*> References.bib
+                  
+*** (job aborted, no legal end found)
+
+

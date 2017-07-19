@@ -16,7 +16,7 @@ The design of a chatbot is more effective by using specific guidelines that allo
 
 \section{Chatbot Purpose}
 
-The purpose of the chatbot should be clear to users. A chatbot that makes a user feel confused about its purpose is futile. Users need to have a clear understanding of why the chatbot was designed and what its capabilities and limitations are. 
+The purpose of the chatbot should be clear to users. A chatbot that makes a user feel confused about its purpose is futile. Users need to have a clear understanding of why the chatbot was designed and what its capabilities and limitations are.
 
 Chatbot designers need to identify a balance between the constraints of the interface and the goals of users that they want to accomplish. Besides this, designers should analyse what kind of chatbots they require, and if it is feasible to create it or not. After finding this balance and making this analysis, the designers should start to define what the chatbot's capabilities will be (what the chatbot can do in order to help users in their tasks). 
 
@@ -48,57 +48,58 @@ The most important and complex part of designing a chatbot is the creation of th
 \subsection{Greeting}
 Since the first interaction, users should have a clear idea of the chatbot context and what they can expect from it. Therefore, users should know the context in which the chatbot need to be used.
 
-The welcome or greeting section is the first interaction in which chatbots should clearly communicate what they are capable of doing, in order to avoid functionality misunderstandings. According to Lurchenko, the information in the welcome screen should not exceed 160 characters~\cite{CheatSheet}. 
+The welcome or greeting section is the first interaction in which chatbots should clearly communicate what they are capable of doing, in order to avoid functionality misunderstandings. 
+%According to Lurchenko, the information in the welcome screen should not exceed 160 characters~\cite{CheatSheet}. 
+The welcome section of the conversation should be short and concise, to avoid users feel overwhelmed due to the amount of information provided by the chatbot. 
 
 \subsection{Conversation}
-The conversation section is when the topic will be developed. According to Mishra, ``Effective communication is getting the message across as intended and getting desired feedback by influencing and attracting attention"~\cite{effectivCommunication}. Therefore, chatbots should be able to express a clear message to the user in order to have an effective communication. This section can have assertions, questions, comments, and feedback. The participants of the conversation should take turns interacting in order to communicate a clear message.
+The conversation section is when the topic will be developed. According to Mishra ~\cite{effectivCommunication}, ``Effective communication is getting the message across as intended and getting desired feedback by influencing and attracting attention". Therefore, chatbots should be able to express a clear message to the user in order to have an effective communication. This section can have assertions, questions, comments, and feedback. The participants of the conversation should take turns interacting in order to communicate a clear message.
 
 \subsection{Farewell}
-The farewell section is the last part of a conversation. By this phase, the users should have had the help that they need in order to finish their task and to have relevant feedback.  
-
-%FALTAN LOS DEMAS!!! 
-%\textbf{Interaction elements} \\[0\baselineskip]
+The farewell section is the last part of a conversation. By this phase, the users should have had the help that they need in order to finish their task and to have relevant feedback. In this section, the chatbot should ask the user if the provided information or help was useful, and if the user would like to do anything else. 
 
 \section{Interaction elements}
-According to Allen et al.~\cite{allen1978conversation} the speaker can emit several elements, such as assertions, questions, and support in a conversation. Chatbots can emit the same elements. 
+According to Allen et al.~\cite{allen1978conversation}, the speaker can emit several elements, such as assertions, questions, and support in a conversation. Chatbots can emit the same elements. The following interaction elements are described from the chatbot's perspective. 
 
 \subsection{Assertions}
-Assertions are affirmations or messages that the chatbot gives to the user; assertions determine the content of the conversation and allow the listener to increase hir or her knowledge about a certain topic. 
+Assertions are affirmations or messages that the chatbot gives to the user; assertions determine the content of the conversation and allow the listener to increase his or her knowledge about a certain topic. 
 
 \subsection{Questions}
-Questions can be used to make sure that the provided information is required by the user. However, designers should avoid the open-ended questions, because users may respond in a non-supported way. A solution for this may be the use of questions that provide three different options in buttons, and the chatbot should ask users to select one. If the options provided by the chatbot contain several images, a good way to display them is the use of carousels. 
+Questions can be used to make sure that the provided information is required by the user. An example is when Poncho\footnote{https://poncho.is/} the weather forecasts chatbot ask users about the city from which they want to know the weather. If the user would like to know the weather in Manhattan, Poncho will ask the following verification question, ``New York, NY? Right now it's mostly cloudy there. Is that the right city?".
 
-According to Pernice ``Carousels enable more than one piece of content to occupy the same piece of prime real estate on the homepage, which can help diffuse any infighting about whose content is most deserving" and it should not be included more than 5 frames in each carousel because it is hard for users to remember more than five topics at the same time \cite{carousel}. 
+However, designers should avoid the open-ended questions, because users may respond in a non-supported way. A solution for this may be the use of questions that provide different options in buttons inside the chatbot message, and the chatbot should ask users to select one. Each provided option will invoke different actions. If the options provided by the chatbot contain several images, a good way to display them is the use of carousels. 
+
+According to Pernice~\cite{carousel}, ``Carousels enable more than one piece of content to occupy the same piece of prime real estate on the homepage, which can help diffuse any infighting about whose content is most deserving" and it should not be included more than 5 frames in each carousel because it is hard for users to remember more than five topics at the same time. 
 
 %to be include?
 %To add Persistent menus - menus that are in teh interface not in the bot. always available information.  
 % https://chatbotsmagazine.com/cheat-sheet-all-facebook-chatbot-interactions-4b14e4e00178
 
 \subsection{Support}
-Finally, support is any extra help that the chatbot has given to the user. How users can get help, should be in a straightforward way. Commonly, users only need to type the word ``help" or the command ``/help" in order to get an additional support from the chatbot. Besides, when an error has occurred the chatbot should automatically ask users the question about if they need help. Besides, chatbots can also give feedback as a part of the conversational support, or provide meaningful insights about the data analysed or the conversation that the user and the chatbot had.\\[0\baselineskip]
+Finally, support is any extra help that the chatbot has given to the user. This help should be straightforward for users. Commonly, users only need to type the word ``help" or the command ``/help" in order to get an additional support from the chatbot. When an error has occurred the chatbot should automatically ask users the question if they need any help. Besides, chatbots can also give feedback as a part of the conversational support, or provide meaningful insights about the data analysed or the conversation that the user and the chatbot had.\\[0\baselineskip]
 
 \section{Conversational script}
 The conversational script should take into account the following elements: timing, being an active participant and an active listener, and avoiding over sharing information.
 
-The chatbot's messages elements can include text, emojis, attached files, images, video or audio. The message can be also structured; this type of messages follow the command line format and usually has buttons to allow users to get information or to answer a question previously asked by the chatbot. According to Lurchenko the content of the buttons should not exceed 20 characters including spaces~\cite{CheatSheet}. Besides, the font of the message should be in an adequate size, besides it can have bold, italic, fixed-width text, and inline links. 
+The chatbot's messages elements can include text, emojis, attached files, images, video or audio. The message can be also structured; this type of messages follow the command line format and usually has buttons to allow users to get information or to answer a question previously asked by the chatbot. The content of the message should be short in order to have a minimal design and a better user comprehension.  %According to Lurchenko the content of the buttons should not exceed 20 characters including spaces~\cite{CheatSheet}. Besides, the font of the message should be in an adequate size, besides it can have bold, italic, fixed-width text, and inline links. 
 
 \section{Chatbot Language}
-According to Allen et al.~\cite{allen1978conversation} in order to have a meaningful conversation, it is necessary to share a language and vocabulary in common. Chatbots should use the same language and words as the user, and avoid using technical and system-oriented terms. If the design of the conversational agent is oriented to certain populations, chatbots can mimic how users normally speak.  Therefore, before the creation of the chatbot, it is necessary to have a ``solid understanding of the audience we seek to appeal to, and to have a vocabulary familiar to them”~\cite{HeuristicsWebPage}. 
+According to Allen et al.~\cite{allen1978conversation}, in order to have a meaningful conversation, it is necessary to share a language and vocabulary in common. Chatbots should use the same language and words as the user, and avoid using technical and system-oriented terms. If the design of the conversational agent is oriented to certain populations, chatbots can mimic how users normally speak.  Therefore, before the creation of the chatbot, it is necessary to have a ``solid understanding of the audience we seek to appeal to, and to have a vocabulary familiar to them”~\cite{HeuristicsWebPage}. 
 
 \section{Chatbot conversation flow}
-According to Reichman~\cite{reichman1985getting}, in an usual conversation many details are being shared. To avoid an incoherent conversational flow, it is necessary that listeners understand when and why the conversational topic has been changed. For instance chatbots can twist the conversation from talking about a certain graph and when the user has selected the graph, to what color is better to use. Shifting the conversation topic should be made carefully to avoid misunderstandings. 
+According to Reichman~\cite{reichman1985getting}, in a usual conversation many details are being shared. To avoid an incoherent conversational flow, it is necessary that listeners understand when and why the conversational topic has been changed. The conversational chatbot flow should follow a certain order. This means that after a particular information was given, the chatbot should perform a certain task. After these steps the conversational flow can change. Users can change the topic conversation at any point of the conversation that they desire. For example, ShopBot\footnote{https://shopbot.ebay.com/} from Ebay can help users to select a pair of jeans, and after selecting the desired jeans, the user can also ask for a blouse from a different department. Another example is Poncho, users can ask him about the weather, and then change the conversation's topic and have a little chat with poncho about astrology. 
 
-Chatbots need to follow a structured development of the conversation, also known as a conversational script, to avoid references that are not clear to the participants, and engage users in the conversation.
+* For instance, the design of the chatbots can twist the conversation from talking about a certain graph and when the user has selected the graph, to what color is better to use /find another example/. Shifting the conversation topic should be made carefully to avoid misunderstandings.  * ?
 
-The conversation between the user and the chatbot should not lead to any ambiguity about what to say in the conversation. Therefore, the chatbot's conversation should use structured messages that are clear and concise. By using structured messages chatbots can "guide a user through the interaction"~\cite{HeuristicsWebPage}.
+Chatbots need to follow a conversational script that is a structured development of the conversation, conversational script, to avoid references that are not clear to the participants, and engage users in the conversation.
 
-However, designers should be careful of not letting the chatbot lose the feeling of a normal conversation. Some chatbots only use structured messages; for this reason they seem to be a command line, instead of giving the user the conversational feeling that chatbots should have. The flow of the conversation should be natural and evident. 
+The conversation between the user and the chatbot should not lead to any ambiguity about what to say in the conversation. Therefore, the chatbot's conversation should be structured and have messages that are clear and concise. By using structured conversation chatbots can guide a user through the interaction~\cite{HeuristicsWebPage}.
 
-%http://www.wikihow.com/Have-a-Great-Conversation
+However, designers should be careful of not letting the chatbot lose the feeling of a normal conversation. Some conversations might be structured too rigidly; for this reason they seem to be a command line, instead of giving the user the conversational feeling that chatbots should have. The flow of the conversation should be natural and evident. 
 
 \section{User's Control}
 
-Users are accustomed to and like having control over the software. Therefore, it is extremely important to make the user feel that he or she has the control over the interface. Chatbots should not make users believe that they are powerless over the interface; they are there to help users to have a better experience using the interface. Chatbots should be guides or an additional aid that allows users to understand the interface and have better results. According to Sheneiderman~\cite{shneiderman1997direct} it is ``necessary to give the users the feeling of being in control and therefore they can be responsible for the decisions they make.” 
+Users are accustomed to and like having control over the software. Therefore, it is extremely important to make the user feel that he or she has the control over the interface. Chatbots should not make users believe that they are powerless over the interface; they are there to help users to have a better experience using the interface. Chatbots should be guides or an additional aid that allows users to understand the interface and have better results. According to Shneiderman~\cite{shneiderman1997direct}, it is ``necessary to give the users the feeling of being in control and therefore they can be responsible for the decisions they make.” -Only users can change the topic of the conversation? or also the bot?
 
 \section{User's Freedom?/chatbot undo and redo? }
 
@@ -127,7 +128,15 @@ A Chatbot’s personality is what makes a chatbot different. By adding extra inf
 
 According to Spectrm ``The personality of a chatbot consists of a purpose, matching characteristics and a suiting tonality. Crafting a personality is the most important part of chatbot creation"~\cite{personality}.
 
-The chatbot’s personality should take into account the target audience for which it was designed. The personality should match with the users: therefore, how friendly, sarcastic or humorous should only depend on the people who will use the chatbot. Users like to interact with chatbots in a human way~\cite{HeuristicsWebPage}. For this reason designers should consider how to engage users in the conversation. 
+The chatbot’s personality should take into account the target audience for which it was designed. The personality should match with the users: therefore, how friendly, sarcastic or humorous should only depend on the people who will use the chatbot. 
+
+To create a new subtitle chatbots audience?
+
+Chatbots can be developed for business, customer oriented tasks, or just be oriented to teens customers~\cite{Shevat2017}. Business oriented task's chatbots are designed to help teams to collaborate in a more effective way. This kind of chatbot can be useful to help software developers in their task because ``can help reduce the friction points they have to face when working collaborative"~\cite{lebeuf2017software}. An example of a business oriented task chatbot is the slackbot\footnote{https://api.slack.com}. The consumer oriented task's chatbots are designed to help users communicate, get additional information or help. An example is Poncho the weather forecast chatbot. Finally, the teens oriented chatbots are developed to entertain young customers, this kind of users like to play games, chat and share content with friends. An example of this chatbot is Kik\footnote{https://bots.kik.com/}. 
+
+According to Shevat, in order to define the chatbot's audience, developers need to answer the following questions: Are you addressing a business use case? Is this a consumer use case? Are you targeting teens? Families? Adults at work? When are they using the service? \cite{Shevat2017}.
+
+Users like to interact with chatbots in a human way~\cite{HeuristicsWebPage}. For this reason designers should consider how to engage users in the conversation. 
 
 A clear example of how to get a user engagement is the Aura's bot. Aura Dione is a Danish singer who is using a chatbot in order to be in contact with her fans. The designer of the Aura's bot use the personality of the singer. Therefore, the tone of the chatbot is like an artist, and fans can communicate with it and ask extra information about the singer. Fans have the feeling of being interacting with the singer, and this lead to the user engagement and retention~\cite{personality}.  
 
@@ -139,7 +148,7 @@ In conclusion the chatbot’s success may be defined by how designers balance be
 
 \section{Chatbot's versatility}
 
-Chatbots should be versatile enough to be able to understand open questions, commands, and requests written by the user. If a user wants to use a command in the interaction with the chatbot, the dialogue should continue smoothly without breaking the flow. Commands start with a slash and they are not longer that 32 characters, those characters can be Latin letters, numbers and underscores~\cite{botfather}. Commands can also be followed by an argument.  
+Chatbots should be versatile enough to be able to understand open questions, commands, and requests written by the user. If a user wants to use a command in the interaction with the chatbot, the dialogue should continue smoothly without breaking the flow. Commands start with a slash and they are not longer that 32 characters, those characters can be Latin letters, numbers and underscores~\cite{botfather}. It is a common practice to have slash commands in the following pattern: slash ``command name" ``arguments"~\cite{Shevat2017}.  
 
 \section{Chatbot's memory}
 

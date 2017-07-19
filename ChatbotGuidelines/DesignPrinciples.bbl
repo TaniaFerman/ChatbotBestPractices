@@ -38,11 +38,6 @@ Martin~J Eppler.
   sharing.
 \newblock {\em Information visualization}, 5(3):202--210, 2006.
 
-\bibitem{CheatSheet}
-Anna Lurchenko.
-\newblock Cheat sheet: All facebook messenger bots interactions.
-\newblock Chatbots Magazine, February 2016.
-
 \bibitem{effectivCommunication}
 Sneha Mishra.
 \newblock Effective communication.
@@ -85,6 +80,12 @@ TopBots.
 Spectrm.
 \newblock Your chatbot's personality is the key.
 \newblock Chatbots Magazine, February 2017.
+
+\bibitem{lebeuf2017software}
+Carlene Lebeuf, Margaret-Anne Storey, and Alexey Zagalsky.
+\newblock How software developers mitigate collaboration friction with
+  chatbots.
+\newblock {\em arXiv preprint arXiv:1702.07011}, 2017.
 
 \bibitem{botfather}
 Bots: An introduction for developers, October 2014.

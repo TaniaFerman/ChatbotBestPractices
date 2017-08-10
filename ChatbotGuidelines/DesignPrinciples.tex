@@ -14,6 +14,14 @@ It is necessary to make software customized and accessible for users who do not 
 In order to make the interaction between the user and the chatbot more efficient, designers required a comprehensive list of best practices in chatbot's design. 
 The design of a chatbot is more effective when the designers use specific practices that allows them not to start from scratch, but to give them a specific structure of how to design an efficient chatbot. 
 
+\section*{Objective}
+
+Develop best practices that allow designers to design and create a chatbot.
+
+\section*{Motivation}
+
+To help designers to create more efficient chatbots by having a good (complete, accurate)* set of best practices.  
+
 \section*{Project Description}
 
 The project consists of three main phases. The first is the design of a Chatbot's best practices. The second phase is the muck-up of a visualization chatbot that fulfil (according to)* the best practices of the first phase. Finally the third section is the case study. This study will be carried out to evaluate the chatbot best practices. Therefore, if the chatbot fulfil the user requirements (needs)* in the case study, this is a clear indication that the best practices are adequate (accurate)* for the creation of a chatbot. (that gives evidence that the best practices are accurate.)*
@@ -31,7 +39,7 @@ The first user persona is oriented to the Chatbot's best practices (Figure ~\ref
 The second user persona is oriented to the chatbot (Figure ~\ref{FigureLaura}). Laura is a Visualization novice who works as a project manager in a mid-sized company in Victoria, BC. She has managed several projects successfully. However, she does not have any background creating visualizations. On a daily basis, she uses her computer, iPad, and mobile phone to work. She has problems in creating visualizations to explain her ideas and project results. She has little time to devote in the visualization creation process, and struggles in learning new technologies. Besides, she finds the amount of visualization tools overwhelming. Laura would like to find a good way, by using her mobile phone, to create an effective visualization. In addition, she would like to get help in the visualization creation and data analysis process.  
 \begin{figure}
 \centering
-\includegraphics[scale=0.4]{/Users/MariaFerman/Desktop/BestPracticesPersona.png}
+\includegraphics[scale=0.4]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/LaTexImages/BestPracticesPersona.png}
 \caption{Best Practices' Persona}
 \label{FigurePatricia}
 \end{figure}
@@ -40,7 +48,7 @@ The second user persona is oriented to the chatbot (Figure ~\ref{FigureLaura}). 
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.4]{/Users/MariaFerman/Desktop/PersonaProject.png}
+\includegraphics[scale=0.4]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/LaTexImages/PersonaProject.png}
 \caption{Chatbot's Persona}
 \label{FigureLaura}
 \end{figure}
@@ -56,8 +64,19 @@ The purpose of a chatbot should be clear to its users. A chatbot that makes a us
 
 Chatbot designers need to identify a balance between the constraints of the interface and the goals of users that they want to accomplish. Besides this, the kind of chatbot needed should be decided based on the final user's requirements, and if it is feasible to create them or not. After finding this balance and making this analysis, the designers should define what the chatbot's capabilities will be (i.e., what the chatbot can do in order to help users in their tasks). 
 
-In addition, designers should understand when to use a direct manipulation interface (e.g., graphic user interface) and when to use a chatbot. Usually, conversational agents that do not have a clear purpose make the user feel that the job can be done by a regular website. Chatbots can be very useful as long as they are well-developed and oriented to the purpose. %According with Maes \cite{shneiderman1997direct}, if a designer wants to create an agent that will work and has the trust of the user, it is important to understand  
+In addition, designers should understand when to use a direct manipulation interface (e.g., graphic user interface) and when to use a chatbot. Usually, conversational agents that do not have a clear purpose make the user feel that the job can be done by a regular website. Chatbots can be very useful as long as they are well-developed and oriented to the purpose.  
+%EXPLAIN FIGURE
+(Figure ~\ref{FigurePurpose})
+ %According with Maes \cite{shneiderman1997direct}, if a designer wants to create an agent that will work and has the trust of the user, it is important to understand  
 
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/LaTexImages/CNN_chatbot_purpose.png}
+\caption{CNN Chatbot}
+\label{FigurePurpose}
+\end{figure}
+
+%TO MERGE IN CONVERSATIONAL & SITUATIONAL KNOWLEDGE
 \section{Conversational Shared Knowledge}
 
 Conversations need to follow certain rules and to have a certain semantic order for the sake of having a clear understanding between the user and the chatbot. Therefore, to have a meaningful conversation, the chatbot script should follow the same rules and semantic order as a regular conversation. In other words, there should be a mapping between the script and the actual conversation. Designers need to understand what the actual conversation will feel like for the users and then create the chatbot accordingly. 
@@ -72,8 +91,15 @@ In order to have a mutual understanding in a conversation, it is necessary that 
 
 Listeners must be able to follow the context of the conversation; they need to grasp what the speaker's point is and what he or she said before. Listeners need to understand the prior and the current context of the conversation to avoid being confused and to grasp the conversation's assertion. At the same time, speakers need to follow the order of a conversation to make their remarks easily understandable to the listeners. Therefore, the user and the chatbot should \textit{share the same information, to be on the same page.} 
 
-%To remove
-Alexa, Amazon's voice control system chatbot, is a clear example of the importance of context for conversational agents. When  a San Diego TV station was covering the report of a girl ordering a dollhouse by mistake, the viewers' Alexa devices also recognized the command to purchase a dollhouse. ``If Alexa has recognized the context of the news programme (the TV show presenter speaking in a past tense), then Alexa would not have taken action"~\cite{WhatwecanlearnfromAlexasmistakes}.
+%EXPLAIN FIGURE
+(Figure ~\ref{FigurePoncho})
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.1]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/PonchoConversationLines.png}
+\caption{Poncho Weather Forecast Chatbot}
+\label{FigurePoncho}
+\end{figure}
 
 \section{Chatbot Interactions}
 
@@ -81,7 +107,18 @@ According to the Merriam-Webster dictionary, interaction is defined as the actio
 %According to the Cambridge dictionary, interaction is defined as the occasion when two or more people or things communicate with or react to each other!!!!!.
 Chatbots should have a well-designed series of interactions with users. Every single intended interaction should have a specific script of the different conversations that the chatbot and the users may have. Conversational scripts allow users to have a ``draft outlining the situation and actions the chatbot need to support"~\cite{CaseStudy}. Those scripts determine the limitation of the chatbot by having specific scenarios about the conversation. 
 
-The most important and complex part of designing a chatbot is the creation of the conversational script, because the user can take many paths (conversation scenarios) in order to achieve one task~\cite{designChatbotConversatio}. In other words, users can select different paths which should all arrive at the same destination. One effective way to create those different scenarios is using mind maps. According to Eppler~\cite{eppler2006comparison}, ``Mind maps are defined as a a multicoloured and image centred, radial diagram that represents semantic or other connections between portions of learned material hierarchically". After creating the mind maps, designers can use tools like InVision \footnote{www.invisionapp.com} in order to create the conversational chatbot mockups.
+The most important and complex part of designing a chatbot is the creation of the conversational script, because the user can take many paths (conversation scenarios) in order to achieve one task~\cite{designChatbotConversatio}. In other words, users can select different paths which should all arrive at the same destination. One effective way to create those different scenarios is using mind maps. According to Eppler~\cite{eppler2006comparison}, ``Mind maps are defined as a a multicoloured and image centred, radial diagram that represents semantic or other connections between portions of learned material hierarchically". 
+%EXPLAIN FIGURE
+(Figure ~\ref{FigureMindMap})
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.2]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/ConversationalMindMap.png}
+\caption{Poncho Weather Forecast Chatbot}
+\label{FigureMindMap}
+\end{figure}
+
+After creating the mind maps, designers can use tools like InVision \footnote{www.invisionapp.com} in order to create the conversational chatbot mockups.
 
 \subsection{Greeting}
 From the first interaction between a user and a chatbot, the users should have a clear idea of the chatbot context and what they can expect from it. Therefore, users should know the context in which the chatbot need to be used.
@@ -103,7 +140,14 @@ According to Allen et al.~\cite{allen1978conversation}, the speaker can emit sev
 Assertions are affirmations or messages that the chatbot gives to the user; assertions determine the content of the conversation and allow the listener to increase his or her knowledge about a certain topic. 
 
 \subsection{Questions}
-Questions can be used to make sure that the provided information is required by the user. An example is when Poncho\footnote{https://poncho.is/}, the weather forecasts chatbot, asks users about the city for which they want to know the weather. If the user would like to know the weather in Manhattan, Poncho will ask the following verification question, ``New York, NY? Right now it's mostly cloudy there. Is that the right city?"
+Questions can be used to make sure that the provided information is required by the user. An example is when Poncho\footnote{https://poncho.is/}, the weather forecasts chatbot, asks users about the city for which they want to know the weather. If the user would like to know the weather in Manhattan, Poncho will ask the following verification question, ``New York, NY? Right now it's mostly cloudy there. Is that the right city?" (Figure ~\ref{FigureVerificationQuestion}). %TO COMPLETE EXPLANATION
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.3]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/VerificationQuestion.png}
+\caption{Poncho Weather Forecast Chatbot}
+\label{FigureVerificationQuestion}
+\end{figure}
 
 However, designers should avoid open-ended questions, because users may respond in a non-supported way. A solution for this may be the use of questions that provide different options in buttons inside the chatbot message, and the chatbot should ask users to select one. Each provided option will invoke different actions. If the options provided by the chatbot contain several images, a good way to display them is the use of carousels. 
 
@@ -124,10 +168,37 @@ The chatbot's messages elements can include text, emojis, attached files, images
 \section{Chatbot Language}
 According to Allen et al.~\cite{allen1978conversation}, in order to have a meaningful conversation, it is necessary to share a language and have vocabulary in common. Chatbots should use the same language and words as the user, and avoid using technical and system-oriented terms. If the design of the conversational agent is oriented to certain populations, chatbots can mimic how users normally speak.  Therefore, before the creation of the chatbot, it is necessary to have a ``solid understanding of the audience we seek to appeal to, and to have a vocabulary familiar to them”~\cite{HeuristicsWebPage}. 
 
+%EXPLAIN FIGURE
+(Figure ~\ref{FigureIRIS})
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/IRIS-image.png}
+\caption{Iris Data Science Chatbot}
+\label{FigureIRIS}
+\end{figure}
+
 \section{Chatbot Conversation Flow}
-According to Reichman~\cite{reichman1985getting}, in a usual conversation many details are being shared. To avoid an incoherent conversational flow, it is necessary that listeners understand when and why the conversational topic has been changed. The conversational chatbot flow should follow a certain order. This means that after particular information was given, the chatbot should perform a certain task. After these steps, the conversational flow may change. Users can change the topic of the conversation at any point. For example, ShopBot\footnote{https://shopbot.ebay.com/} from Ebay helps users to select a pair of jeans, and after selecting the desired jeans, the user can also ask for a blouse from a different department. Another example is Poncho, users can ask him about the weather, and then change the conversation's topic and have a little chat with Poncho about astrology. 
+According to Reichman~\cite{reichman1985getting}, in a usual conversation many details are being shared. To avoid an incoherent conversational flow, it is necessary that listeners understand when and why the conversational topic has been changed. The conversational chatbot flow should follow a certain order. This means that after particular information was given, the chatbot should perform a certain task. After these steps, the conversational flow may change. Users can change the topic of the conversation at any point. For example, ShopBot\footnote{https://shopbot.ebay.com/} from Ebay helps users to select a pair of jeans, and after selecting the desired jeans, the user can also ask for a blouse from a different department (Figure ~\ref{FigureEbay}). %EXPLAIN MORE 
+Another example is Poncho, users can ask him about the weather, and then change the conversation's topic and have a little chat with Poncho about astrology. 
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/ShopBot.png}
+\caption{Iris Data Science Chatbot}
+\label{FigureEbay}
+\end{figure}
 
 * For instance, the design of the chatbots can twist the conversation from talking about a certain graph and when the user has selected the graph, to what color is better to use /find another example/. Shifting the conversation topic should be made carefully to avoid misunderstandings.  * ?
+%EXPLAIN MORE
+(Figure ~\ref{FigureRescue}).  
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/rescued.png}
+\caption{Rescue Emergency Chat Service}
+\label{FigureRescue}
+\end{figure}
 
 Chatbots need to follow a conversational script that is a structured development of the conversation, to avoid references that are not clear to the participants, and engage users in the conversation.
 
@@ -144,6 +215,15 @@ Chatbots should not make users believe that they are powerless over the interfac
 \section{Making Changes on the Fly}
 
 It is normal that users make mistakes when they are choosing different options in an interface. Chatbots should have the ability to undo or redo the responses that the user gave. In that case, users know that they are able to undo an unwanted change triggered by a misinterpreted message or a mistaken click~\cite{HeuristicsWebPage}.The chatbot Poncho has the ability to ask users if the information provided was appropriate; if not, users can clarify their question. 
+%EXPLAIN MORE
+(Figure ~\ref{FigureUndo}).  
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/Undo2.png}
+\caption{Chatbot Without an Undo Capability}
+\label{FigureUndo}
+\end{figure}
 
 \section{Error Messages}
 
@@ -168,7 +248,14 @@ The chatbot’s personality should take into account the target audience for whi
 
 Users like to interact with chatbots in a human way~\cite{HeuristicsWebPage}. For this reason designers should consider how to engage users in the conversation. 
 
-A clear example of how to get user engagement is the Aura's Bot~\footnote{http://m.me/aurapower}. Aura Dione is a Danish singer who is using a chatbot in order to be in contact with her fans. The designer of the Aura's Bot uses the personality of the singer. Therefore, the tone of the chatbot is like an artist, and fans can communicate with it and ask extra information about the singer. Fans have the feeling of interacting with the singer, and this leads to the user engagement and retention~\cite{personality}.  
+A clear example of how to get user engagement is the Aura's Bot~\footnote{http://m.me/aurapower}. Aura Dione is a Danish singer who is using a chatbot in order to be in contact with her fans. The designer of the Aura's Bot uses the personality of the singer. (Figure ~\ref{FigureAura}). Therefore, the tone of the chatbot is like an artist, and fans can communicate with it and ask extra information about the singer. Fans have the feeling of interacting with the singer, and this leads to the user engagement and retention~\cite{personality}.  
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/AuraBot.png}
+\caption{Aura's Bot}
+\label{FigureAura}
+\end{figure}
 
 According to Scott~\cite{HeuristicsWebPage}, there is a difference between the content (relevant information to help the user) and the medium (the chatbot’s personality). Users need to be entertained and at the same time to be helped.      
 
@@ -194,9 +281,16 @@ Chatbots should be built with the ability to keep track of the user's interest a
 
 %If I come back, Poncho will remember my location, saving me a few keystrokes.*
 
-\section{Chatbot's Limitations}
+\section{Chatbot's Communication Capabilities}
 
-Chatbots should have a delimited script of the possible scenarios. If a user wants to go through an unknown topic for the chatbot, the chatbot has to specify to the user that this question goes beyond its knowledge. For example, when a user asks Poncho, the weather chatbot, something that it was not created to answer, Poncho replies with: ``Oops, I didn't catch that. For things I can help you with, type \textit{help}"~\cite{HeuristicsWebPage}. Chatbots need to gracefully establish limits to users that want to go beyond the chatbot's knowledge.  
+Chatbots should have a delimited script of the possible scenarios. If a user wants to go through an unknown topic for the chatbot, the chatbot has to specify to the user that this question goes beyond its knowledge. For example, when a user asks Poncho, the weather chatbot, something that it was not created to answer, Poncho replies with: ``Oops, I didn't catch that. For things I can help you with, type \textit{help}"~\cite{HeuristicsWebPage} (Figure ~\ref{FigureCommunicationCapabilities}). Chatbots need to gracefully establish limits to users that want to go beyond the chatbot's knowledge.  
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/PonchoHelp.png}
+\caption{Poncho Weather Forecast Chatbot}
+\label{FigureCommunicationCapabilities}
+\end{figure}
 
 \section{Chatbot's Documentation}
 

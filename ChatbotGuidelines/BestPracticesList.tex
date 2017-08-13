@@ -1,6 +1,8 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
 \title{Chatbot's Best Practices List}
 \author{Maria Ferman}
 
@@ -16,6 +18,41 @@ Designers like Christ should give an specific purpose to the chatbot. So when La
 
 In order to have a good conversation the chatbot and the user should share a conversational and situational knowledge.  Conversational knowledge is when Laura should be able to follow the meaning of the chatbot remarks, while the chatbot should be able to select a response that fits coherently into what Laura is saying. Situaltional knowledge is when the chatbot should be situation-aware regarding Laura’s context.
 
+\section{Chatbot Interactions}
+
+Conversational scripts allow Chris to have a draft outlining the situations and actions the chatbot need to support. Those scripts determine the limitation of the chatbot by having specific scenarios about the conversation. 
+
+\section{Interaction Elements}
+
+As in a regular conversation, a conversation with a chatbot may contain:
+
+Assertions: Informational messages, Error Messages
+
+Questions: Verification Questions, Open Questions(uncover context), Close Questions(confirm understanding)
+
+Support: Help, Data Insights.
+
+\begin{table}[]
+\centering
+
+\label{InteractionElementsTable}
+\begin{tabular}{lllll}
+\hline
+\textbf{Assertions}    & \textbf{Questions}     & \textbf{Support}   \\
+\hline
+Informational messages & Verification Questions & Help      \\
+Error Messages         & Open Questions         & Data Insights.  \\
+                       & Close Questions        &       \\
+     \hline                   
+\end{tabular}
+\caption{Interaction elements}
+\end{table}
+
+ Besides regular human conversational elements, chatbots may have command-line statements (expressions)*. These statements are commands that users with a domain specific knowledge use to interact with the chatbot.
+ 
+ \section{Chatbot Language}
+ 
+ Chatbots should use the same language and words as the user. The use of technical and system-oriented terms should be according to the audience. 
 
 
 \medskip

@@ -242,13 +242,16 @@ The conversation between the user and the chatbot should not lead to any ambigui
 
 Users are accustomed to and like having control over the software. For instance, when a user has the ability of doing more customizations in an interface, they tend to feel more engaged in using that interface, because it has the user preferences. Therefore, it is extremely important to make the user feel that he or she has control over the interface. According to Maes~\cite{shneiderman1997direct}, ``users must be able to to turn over control of task to conversational agents but users must never feel out of control".
 
-Chatbots should not make users believe that they are powerless over the interface; they are there to help users to have a better experience using the interface. Chatbots should be guides or an additional aid that allows users to understand the interface and have better results. According to Shneiderman~\cite{shneiderman1997direct}, it is ``necessary to give the users the feeling of being in control and therefore they can be responsible for the decisions they make.” - * Only users can change the topic of the conversation? or also the bot?
+Chatbots should not make users believe that they are powerless over the interface; they are there to help users to have a better experience using the interface. Chatbots should be guides or an additional aid that allows users to understand the interface and have better results. According to Shneiderman~\cite{shneiderman1997direct}, it is ``necessary to give the users the feeling of being in control and therefore they can be responsible for the decisions they make.” 
 
-\section{Making Changes on the Fly}
+\section{Making Changes on the Fly - Corrections ?}
 
-It is normal that users make mistakes when they are choosing different options in an interface. Chatbots should have the ability to undo or redo the responses that the user gave. In that case, users know that they are able to undo an unwanted change triggered by a misinterpreted message or a mistaken click~\cite{HeuristicsWebPage}.The chatbot Poncho has the ability to ask users if the information provided was appropriate; if not, users can clarify their question. 
-%EXPLAIN MORE
-(Figure \ref{FigureUndo}).  
+It is normal that users make mistakes when they are choosing different options in an interface. For this reason, it is very important that chatbots have the ability to undo or redo the responses that the user gave. In that case, users know that they are able to undo an unwanted change triggered by a misinterpreted message or a mistaken click~\cite{HeuristicsWebPage}. %Therefore, designers must take into account that users may make mistakes. 
+Figure \ref{FigureUndo} shows an example of a chatbot without the undo capability. In this example, the user made a mistake in the items that he or she would like to add to his or her shopping cart. Because the chatbot do not have the ability to undo, the user has two options, start the conversation from the beginning or buy all the items that are in the shopping cart even if he or she does not need them. This is a good example of why chatbots need to have the ability to undo, because users will feel annoyed of starting the whole conversation again or may not be willing to purchase mistaken added items. 
+
+During a conversation, Chatbots have hints about when a user made a mistake. In the previous example, when the user said "I meant" is a clear indication of the user made a mistake. Therefore words as "meant" gives designers a clue of when to use the undo capability.
+
+Another approach is that the chatbot directly asks users if the information that was provided is accurate. The chatbot Poncho has the ability to ask users if the information provided was appropriate; if not, users can clarify their question.  
 
 \begin{figure}
 \centering
@@ -257,30 +260,36 @@ It is normal that users make mistakes when they are choosing different options i
 \label{FigureUndo}
 \end{figure}
 
-\section{Error Messages}
+%\section{Error Messages}
 
-Chatbots should express error messages in a straightforward way. They should not use codes or technical words to avoid confusing and stressing the user. Chatbots should be able to express that an error has occurred and add suggestions about how to solve or undo that error. 
+%Chatbots should express error messages in a straightforward way. They should not use codes or technical words to avoid confusing and stressing the user. Chatbots should be able to express that an error has occurred and add suggestions about how to solve or undo that error. 
 
-Error prevention allows users to understand that something unexpected just happened in the interaction. For example, an error can be a wrong input data from the user. In the case of such an event, the chatbot should allow users to get additional help or undo what they have just done. Some chatbots  allow to speak with a live agent in the event that the user is struggling with the chatbot interaction. An example of this is 1-800-Flowers Assistant~\footnote{https://www.facebook.com/1800FlowersAssistant/}, this conversational agent can connect a live agent if the conversation with the chatbot fallows for a certain period of time. 
+%Error prevention allows users to understand that something unexpected just happened in the interaction. For example, an error can be a wrong input data from the user. In the case of such an event, the chatbot should allow users to get additional help or undo what they have just done. Some chatbots  allow to speak with a live agent in the event that the user is struggling with the chatbot interaction. An example of this is 1-800-Flowers Assistant~\footnote{https://www.facebook.com/1800FlowersAssistant/}, this conversational agent can connect a live agent if the conversation with the chatbot fallows for a certain period of time. 
 
-To summarize, a good chatbot should be able to provide evidence around error prevention and allow users to recover when an error just happened~\cite{HeuristicsWebPage}. 
+%To summarize, a good chatbot should be able to provide evidence around error prevention and allow users to recover when an error just happened~\cite{HeuristicsWebPage}. 
 
 \section{User's Recognition and Recall}
 
-According to Scott, users do not like to read a large amount of text: ``they will read the first message and then their eyes glaze over. They skim the rest of the text”~\cite{HeuristicsWebPage}. The principle of least effort, set forth by Zipf, also specifies that people use shortened words and expression in speech, in order to obtain the maximum communication by using the least cost~\cite{zipf2016human}. Therefore, chatbots should keep their dialogues short and give the users a small number of options, in order to avoid users getting lost or feeling overwhelmed.
+According to Scott, users do not like to read a large amount of text: ``they will read the first message and then their eyes glaze over. They skim the rest of the text”~\cite{HeuristicsWebPage}. The principle of least effort, set forth by Zipf, also specifies that people use shortened words and expression in speech, in order to obtain the maximum communication by using the least cost~\cite{zipf2016human}. Therefore, chatbots should keep their dialogues short and give the users a small number of options, in order to avoid users getting lost or feeling overwhelmed. This will allow to have a minimal design and a better user comprehension
 
 In addition, users do not remember details of the options given by an interface. When users avoid reading a large amount of text, they may misunderstand the chatbot’s message and finish with an unsuccessful result. The design of the chatbot dialogue should only have relevant information to help users with their tasks and prevent a dull interaction with the chatbot. 
 %... p.8
+
+\section{User's input}
+
+There are several ways that the chatbot may have the input of a user, by clicking an image in a carousel, clicking buttons or directly typing in the input (message)? box, among others. And designers need to have a clear understanding about when is a better option for (to) users to click rather than type. 
+
+When designers need to provide different options the use of a carousel is the most efficient way to do it. When designers need to ask a closed-ended question, the chatbot may give a yes or no button, in order to allow users to answer the question. When users need to type an answer, designers need to keep in mind that users will not type a large amount of text, especially those that are using the chatbot through a mobile phone. Therefore, all the questions should be intended on having a not long answer from the user. 
 
 \section{Chatbot's Personality}
 
 The Oxford dictionary defines personality as the combination of characteristics or qualities that form an individual's distinctive character~\cite{Oxford}. A chatbot’s personality is what makes a chatbot unique. By adding extra information to the dialogue and having a matching language, the chatbot can have a distinctive personality. However, designers should be careful to not include too much additional information that makes the user feel bored or annoyed. There has to be a balance between giving just the relevant information and adding extra information to make the chatbot's conversation more engaging. Therefore, the chatbot personality is an important part to make the user more engaged with the interface.
 
-The chatbot’s personality should take into account the target audience for which it was designed. The personality should match with the users: therefore, how friendly, sarcastic or humorous should only depend on the people who will use the chatbot. 
+The chatbot’s personality should take into account the target audience for which it was designed. The personality should match with the users: therefore, how friendly, sarcastic or humorous should only depend on the people who will use the chatbot. Therefore, when designers are selecting the chatbot personality, they must consider the chatbot audience and the task that the chatbot is trying to support.  
 
 Users like to interact with chatbots in a human way~\cite{HeuristicsWebPage}. For this reason designers should consider how to engage users in the conversation. 
 
-A clear example of how to get user engagement is the Aura's Bot~\footnote{http://m.me/aurapower}. Aura Dione is a Danish singer who is using a chatbot in order to be in contact with her fans. The designer of the Aura's Bot uses the personality of the singer. (Figure \ref{FigureAura}). Therefore, the tone of the chatbot is like an artist, and fans can communicate with it and ask extra information about the singer. Fans have the feeling of interacting with the singer, and this leads to the user engagement and retention~\cite{personality}.  
+A clear example of how to get user engagement is the Aura's Bot\footnote{http://m.me/aurapower}. Aura Dione is a Danish singer who is using a chatbot in order to be in contact with her fans. The designer of the Aura's Bot uses the personality of the singer. (Figure \ref{FigureAura}). Therefore, the tone of the chatbot is like an artist, and fans can communicate with it and ask extra information about the singer. Fans have the feeling of interacting with the singer, and this leads to the user engagement and retention~\cite{personality}.  
 
 \begin{figure}
 \centering
@@ -291,31 +300,33 @@ A clear example of how to get user engagement is the Aura's Bot~\footnote{http:/
 
 According to Scott~\cite{HeuristicsWebPage}, there is a difference between the content (relevant information to help the user) and the medium (the chatbot’s personality). Users need to be entertained and at the same time to be helped.      
 
-Spectrm establishes a series of questions in order to select the right personality for a chatbot: ``Do you have a mascot (for a product or brand)? Does this mascot have a personality that might serve as inspiration? Is there a core value for your company in general or to its way of communication that could inspire the personality? Can you think of a person you know, a celebrity or a fictional character that your bot could resemble?" \cite{personality}. Those questions allow designers to create a template or structure about how they want the chatbot to behave and interact with the users. Other important considerations to take into account are the age, heritage, friends and occupation that the chatbot may have. All these specifications enable designers to have a clear definition of whom the chatbot will resemble.
+%Spectrm establishes a series of questions in order to select the right personality for a chatbot: ``Do you have a mascot (for a product or brand)? Does this mascot have a personality that might serve as inspiration? Is there a core value for your company in general or to its way of communication that could inspire the personality? Can you think of a person you know, a celebrity or a fictional character that your bot could resemble?" \cite{personality}. Those questions allow designers to create a template or structure about how they want the chatbot to behave and interact with the users.
+
+Other important considerations to take into account are the age, heritage, friends and occupation that the chatbot may have. All these specifications enable designers to have a clear definition of whom the chatbot will resemble.
 
 To summarize, the chatbot’s success may be defined by how designers balance between entertainment and guidance. Therefore, the difference between chatbots that are being used and those that are not, is how compelling and pleasant the chatbot experience is.
 
-\section{Chatbot's Audience - Should be a subsection of Personality?}
+%\section{Chatbot's Audience - Should be a subsection of Personality?}
 
-Chatbots can be developed for business, customer oriented tasks, or just be oriented to teen customers~\cite{Shevat2017}. Business oriented tasks' chatbots are designed to help teams to collaborate in a more effective way. This kind of chatbots can be useful to help software developers in their task because ``it can help reduce the friction points they have to face when working collaboratively"~\cite{lebeuf2017software}. An example of a business oriented task chatbot is the slackbot\footnote{https://api.slack.com}. The consumer oriented tasks' chatbots are designed to help users communicate, get additional information or help. An example is Poncho the weather forecast chatbot. Finally, the teen oriented chatbots are developed to entertain young customers and these kinds of users like to play games, chat and share content with friends. An example of this chatbot is Kik\footnote{https://bots.kik.com/}. 
+%Chatbots can be developed for business, customer oriented tasks, or just be oriented to teen customers~\cite{Shevat2017}. Business oriented tasks' chatbots are designed to help teams to collaborate in a more effective way. This kind of chatbots can be useful to help software developers in their task because ``it can help reduce the friction points they have to face when working collaboratively"~\cite{lebeuf2017software}. An example of a business oriented task chatbot is the slackbot\footnote{https://api.slack.com}. The consumer oriented tasks' chatbots are designed to help users communicate, get additional information or help. An example is Poncho the weather forecast chatbot. Finally, the teen oriented chatbots are developed to entertain young customers and these kinds of users like to play games, chat and share content with friends. An example of this chatbot is Kik\footnote{https://bots.kik.com/}. 
 
-According to Shevat, in order to define the chatbot's audience, developers need to answer the following questions: Are you addressing a business use case? Is this a consumer use case? Are you targeting teens? Families? Adults at work? When are they using the service? \cite{Shevat2017}.
+%According to Shevat, in order to define the chatbot's audience, developers need to answer the following questions: Are you addressing a business use case? Is this a consumer use case? Are you targeting teens? Families? Adults at work? When are they using the service? \cite{Shevat2017}.
 
-\section{Chatbot's Versatility}
+%\section{Chatbot's Versatility}
 %retrival base bots - question answer 
-Chatbots should be versatile enough to be able to understand open-questions, commands, and requests written by the user. An example of an open-question is when users ask Poncho, "What's the weather like in Brooklyn this weekend?" and then Poncho answers with the Brooklyn weather forecast. 
+%Chatbots should be versatile enough to be able to understand open-questions, commands, and requests written by the user. An example of an open-question is when users ask Poncho, "What's the weather like in Brooklyn this weekend?" and then Poncho answers with the Brooklyn weather forecast. 
 
-However, if a user wants to use a command in the interaction with the chatbot, the dialogue should continue smoothly without breaking the flow. Commands to chatbots can be conveyed via special characters followed by an argument. For example, chatbots' commands in Slack and Telegram start with a slash follow by an argument. The characters of the argument can be Latin letters, numbers and underscores~\cite{botfather}. It is a common practice to have slash commands in the following pattern: slash ``command name" ``arguments"~\cite{Shevat2017}.  
+%However, if a user wants to use a command in the interaction with the chatbot, the dialogue should continue smoothly without breaking the flow. Commands to chatbots can be conveyed via special characters followed by an argument. For example, chatbots' commands in Slack and Telegram start with a slash follow by an argument. The characters of the argument can be Latin letters, numbers and underscores~\cite{botfather}. It is a common practice to have slash commands in the following pattern: slash ``command name" ``arguments"~\cite{Shevat2017}.  
 
 \section{Chatbot's Memory}
 
-Chatbots should be built with the ability to keep track of the user's interest and preferences, even if they change over time. Conversational agents can save the user's habits and preferences in the different sessions that he or she had with the chatbot~\cite{shneiderman1997direct}. As an example of this, Poncho can save the location of a certain user. Therefore, the next time that the user asks for a weather broadcast, Poncho already knows which location to look at, saving the user time and keystrokes. Besides, these allow the user to have a customised experience. 
+Chatbots should be built with the ability to keep track of the user's interest and preferences, even if they change over time \textit{(situational knowledge)}. Conversational agents can save the user's habits and preferences in the different sessions that he or she had with the chatbot~\cite{shneiderman1997direct}. As an example of this, Poncho can save the location of a certain user. Therefore, the next time that the user asks for a weather broadcast, Poncho already knows which location to look at, saving the user time and keystrokes. Besides, these allow the user to have a customised experience. 
 
 %If I come back, Poncho will remember my location, saving me a few keystrokes.*
 
 \section{Chatbot's Communication Capabilities}
 
-Chatbots should have a delimited script of the possible scenarios. If a user wants to go through an unknown topic for the chatbot, the chatbot has to specify to the user that this question goes beyond its knowledge. For example, when a user asks Poncho, the weather chatbot, something that it was not created to answer, Poncho replies with: ``Oops, I didn't catch that. For things I can help you with, type \textit{help}"~\cite{HeuristicsWebPage} (Figure \ref{FigureCommunicationCapabilities}). Chatbots need to gracefully establish limits to users that want to go beyond the chatbot's knowledge.  
+Chatbots should have a delimited script of the possible scenarios (Figure \ref{FigureMindMap}). If a user wants to go through an unknown topic for the chatbot, the chatbot has to specify to the user that this question goes beyond its knowledge. For example, when a user asks Poncho, the weather chatbot, something that it was not created to answer, Poncho replies with: ``Oops, I didn't catch that. For things I can help you with, type \textit{help}"~\cite{HeuristicsWebPage} (Figure \ref{FigureCommunicationCapabilities}). Chatbots need to gracefully establish limits to users that want to go beyond the chatbot's knowledge.  
 
 \begin{figure}
 \centering
@@ -324,7 +335,7 @@ Chatbots should have a delimited script of the possible scenarios. If a user wan
 \label{FigureCommunicationCapabilities}
 \end{figure}
 
-\section{Chatbot's Documentation}
+\section{Chatbot's /help}
 
 Chatbots should be used without the need for extra information. How to use a chatbot should be a simple conversational flow. However, there are some users that like to deeply understand how the interface works and detect its limitations. A chatbot appropriate documentation should be precise and short. It should provide extra information about how the chatbot can help users in their tasks. Besides, it also should include a concrete list of what steps can be carried out and the critical points of the chatbot~\cite{HeuristicsWebPage}. 
 

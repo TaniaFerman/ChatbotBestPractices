@@ -16,10 +16,21 @@ The design of a chatbot is more effective when the designers use specific practi
 
 \section*{Objective}
 
-%Develop a set of best practices that allow designers to create and design a text-base chatbot. 
-%To develop best practices for a visualization chatbot (Peggy)
+%To design and develop a chatbot in order to help novice users to create visualizations that allows them to analyse their data and discover deeper insights. The design of the chatbot will be carried out by developing a set of best practices that allow designers to efficiently create a text-based chatbot.  
 
-To design and develop a chatbot in order to help novice users to create visualizations that allows them to analyse their data and discover deeper insights. The design of the chatbot will be carried out by developing a set of best practices that allow designers to efficiently create a text-based chatbot.  
+To develop a set of best practices that allow designers to efficiently create and design a text-base chatbot. 
+
+%Challenges:
+%-to have a well design chatbot
+%	+ one purpose oriented to the audience 
+%	+...
+%-As chatbots move into group chat settings, they’ll need to be designed to understand some of these contextual clues that form the basis for how people interact.
+%(significant challenge for designers)
+%-conversational flows are hard to design (not all the people know this)
+
+%-Artificial intelligence isn’t just about smarts–it’s about social intelligence, -Xiaoice - https://www.fastcodesign.com/3064710/the-challenge-of-designing-a-chatbot-with-manners
+
+
 
 \section*{Motivation}
 
@@ -28,9 +39,11 @@ To design and develop a chatbot in order to help novice users to create visualiz
 %How to create designers to have more effective visualizations X chatbot  
 %to help visualization users novices from the designer point of view - best practices help them 
 
-Understanding data can be a difficult process for people without experience for creating visualizations. For example, project managers need to extract insights and discover patters in their data, and this may not be a straightforward process by using an excel table. Visualizations makes easy for novices to understand their data. However, creating visualization is also a complicated task for novice people. Chatbots can help in the visualization creation and data analysis process. By interacting with a chatbot, novices can get help or an additional support for the visualization creation and visual data exploration.
+%Understanding data can be a difficult process for people without experience for creating visualizations. For example, project managers need to extract insights and discover patters in their data, and this may not be a straightforward process by using an excel table. Visualizations makes easy for novices to understand their data. However, creating visualization is also a complicated task for novice people. Chatbots can help in the visualization creation and data analysis process. By interacting with a chatbot, novices can get help or an additional support for the visualization creation and visual data exploration.
 
-However, people who create chatbots may have troubles to find a complete set of best practices to create and design a chatbot. This makes the chatbot creation process complicated and time consuming. Therefore, a complete and accurate set of best practices will help designers to effectively create chatbots. These best practices will allow users to have a specific guide (steps) about the chatbot's creation. The best practices will describe the necessary elements that integrate chatbot.     
+Creating a chatbot is not a straightforward task. Designers must keep in mind several elements in order to create it. They need to fully understand what is the task that they want to accomplish, in other words, what problem they want to solve and think about the best solution to carry out. Many designers in bot's creation agree that mapping a full conversation about fixing a problem is one of the hardest elements to do~\cite{OreillyBots}. Designers need to fully understand the conversational script and flows that the chatbot need to follow. And at the same time, the chatbot need to be not only useful but also to have emotional and social intelligence in order to interact with users and help them to deal with the problem that they are sharing. 
+
+Therefore, it is important for designers who want to create chatbots, to find a complete set of best practices to create and design a chatbot. There are several best practices and guidelines to create a chatbot, however, in the best of my knowledge they are not a complete set of best practices. This makes the chatbot creation process complicated and time consuming. Therefore, a complete and accurate set of best practices will help designers to effectively create chatbots. These best practices will allow users to have a specific guide (steps) about the chatbot's creation. The best practices will describe the necessary elements that integrate chatbot.     
 
 %1.- Problema
 %2.- Porque los gyidelines son necesarios
@@ -48,10 +61,10 @@ Finally, \textbf{the third phase} is the case study. This study will be carried 
  %PROJECT LIMITATIONS
  %The limitation is that it is subjective, it iwll take more time to fully validate it. 
  
-Throughout the project I will use two different user-personas (Laura and Patricia). The creation of the two personas will guide me in the creation of these best practices, and to help me in the design of the chatbot. Finally, the personas will help me in the case study to select users that are close to the description of the project user-personas. 
-% I am developing the creation of 
 
 %PARAGRAPH TO DESCRIBE THE TWO DIFFERENT PERSONAS. 
+\section*{Project Personas}
+
 The first user-persona is oriented to the Chatbot's best practices (Figure \ref{FigurePatricia}). Patricia is a developer who works in a startup company in Victoria, BC. She holds a Computer Science degree and has good programming skills. However, Patricia does not have experience designing chatbots. She lacks skills and knowledge on software design, and she has little time and lacks of motivation to read blogs and best practices online. In addition, she finds the amount of chatbots blogs overwhelming. Therefore, her goal is to find a set of guidelines that help her to design a chatbot effectively. 
 
 The second user-persona is oriented to the chatbot (Figure \ref{FigureLaura}). Laura is a Visualization novice who works as a project manager in a mid-sized company in Victoria, BC. She has managed several projects successfully. However, she does not have any background creating visualizations. On a daily basis, she uses her computer, iPad, and mobile phone to work. She has problems in creating visualizations to explain her ideas and project results. She has little time to devote in the visualization creation process, and struggles in learning new technologies. Besides, she finds the amount of visualization tools overwhelming. Laura would like to find a good way, by using her mobile phone, to create an effective visualization. In addition, she would like to get help in the visualization creation and data analysis process.  
@@ -62,6 +75,8 @@ The second user-persona is oriented to the chatbot (Figure \ref{FigureLaura}). L
 \label{FigurePatricia}
 \end{figure}
 
+\section*{Project Methodology}
+
 \textbf{Chatbot Best Practices' Design:} The best practices are created to allow people like Patricia to design an effective chatbot. These best practices give developers the most important aspects about the chatbot's design. Therefore, from the beginning they will have a specific structure to follow of how to design their chatbot (Figure \ref{FigureBestPracticeDiagram}). 
 
 \begin{figure}
@@ -71,11 +86,6 @@ The second user-persona is oriented to the chatbot (Figure \ref{FigureLaura}). L
 \label{FigureLaura}
 \end{figure}
 
-\textbf{Chatbot:} The goal of the chatbot is to help people like Laura to create a meaningful visualization about their data. Laura can use natural language statements in order to communicate with the chatbot. In response, the chatbot will provide her with several visualization options.
-
-%Alexey's feedback: (on Visualizations: to communicate or to explore the data) 
-\textbf{Chatbot's Tasks on Visualization:} The Visualization goal of the chatbot is to help users to analyse data by using visual context images (graphs). The chatbot will offer different options to visualize data. The options will be oriented to allow users to see patterns, trends, and correlations that might be not detected by the use of data tables or excel sheets. Therefore, the chatbot will allow users to easily analyse their data in order to have deeper insights.  
-
 \begin{figure}[p]
     \makebox[\linewidth]{
         \includegraphics[width=1.6\linewidth]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/BestPracticesDiagram.png}
@@ -84,9 +94,21 @@ The second user-persona is oriented to the chatbot (Figure \ref{FigureLaura}). L
     \label{FigureBestPracticeDiagram}
 \end{figure}
 
-\newpage
+\textbf{Chatbot:} The goal of the chatbot is to help people like Laura to create a meaningful visualization about their data. Laura can use natural language statements in order to communicate with the chatbot. In response, the chatbot will provide her with several visualization options.
+
+%Alexey's feedback: (on Visualizations: to communicate or to explore the data) 
+\textbf{Chatbot's Tasks on Visualization:} The Visualization goal of the chatbot is to help users to analyse data by using visual context images (graphs). The chatbot will offer different options to visualize data. The options will be oriented to allow users to see patterns, trends, and correlations that might be not detected by the use of data tables or excel sheets. Therefore, the chatbot will allow users to easily analyse their data in order to have deeper insights.  
+
+The creation of a Visualization chatbot allow to test the best practices of the project's first phase. A visualization chatbot was selected because Visualization is an emerging area that "allow people to analyse data when they don't know exactly what questions they need to ask in advance"\cite{munzner2014visualization}. Therefore, Visualizations help people in their decision making process by giving them evidence about the most important insights of their data.
+
+Bringing chatbots into the visualization world allow users to get help to explore and analyse data. Making the visualization creation process easier and straightforward.  One example of Chatbots used to help people to visualize data is Iris~\cite{Iris}. Iris is a data science chatbot that allow users to get help with data science workflows (e.g. get a Person Correlation from a dataset). Another special task for Iris is its ability to create simple graphs from the user data (e.g. scatter plots, bar charts).    
+
+
+
+
+%\newpage
 %\null\vskip 2em\begin{Chatbot's Best Practices}
-%\section*{Chatbot's Best Practices}
+\section*{Chatbot's Best Practices}
 
 \section{Chatbot Purpose}
 
@@ -134,7 +156,7 @@ The most important and complex part of designing a chatbot is the creation of th
    \label{FigureMindMap}
 \end{figure}
 
-After creating the mind maps, designers may use tools like InVision \footnote{www.invisionapp.com} in order to create the conversational chatbot mockups.
+After creating the mind maps, designers may use tools like InVision\footnote{www.invisionapp.com} in order to create the conversational chatbot mockups.
 
 As in a human conversation, chatbots and users can have the same parts of a conversation such as greetings,  conversation and farewell.
 
@@ -280,7 +302,7 @@ A clear example of how to get user engagement is the Aura's Bot\footnote{http://
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.5]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/AuraBot.png}
+\includegraphics[scale=0.4]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/AuraBot.png}
 \caption{Aura's Bot}
 \label{FigureAura}
 \end{figure}

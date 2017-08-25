@@ -10,6 +10,7 @@
 \begin{document}
 
 \maketitle
+%chatbots to try: https://codurance.com/2017/02/08/the-4-key-elements-of-a-conversation/
 % interface-platform
 % Rapid prototyping and conversational flow https://www.behance.net/gallery/37453869/Designing-a-Chatbot-UX-Design-Process-Case-Study
 
@@ -223,12 +224,14 @@ According to Allen et al.~\cite{allen1978conversation}, \textbf{the speaker can 
 \hline
 \textbf{Assertions}    & \textbf{Questions}     & \textbf{Support}   \\
 \hline
-Informational messages & Verification Questions & Help      \\
-Error Messages         & Open-ended Questions         & Data Insights.  \\
-Warning Messages                       & Close-ended Questions        &       \\
-Result Messages                       & Questions Based on Level Of Measurement       &       \\
-Options                       & Contingency Questions       &       \\    
-                       & Dichotomous Questions       &       \\  
+Positive & Open-ended Questions & Help      \\
+Negative         &   Close-ended Questions       & Data Insights.  \\
+Uncertain             &   Concept Completion      &       \\
+ALter-Association                    &   Enablement    &       \\
+                       &  Instrumental/procedural  &       \\    
+                     & Quantification  &       \\    
+                       & Identity Questions  &       \\    
+                      &  Non-Identity Questions  &       \\    
      \hline                   
 \end{tabular}
 \caption{Interaction elements}
@@ -237,10 +240,12 @@ Options                       & Contingency Questions       &       \\
 \end{table}
 
 \subsection{Assertions}
-Assertions are affirmations or messages that the chatbot gives to the user; assertions determine the content of the conversation and allow the listener to increase his or her knowledge about a certain topic. 
+Assertions are affirmations or messages that the chatbot gives to the user; assertions determine the content of the conversation and allow the listener to increase his or her knowledge about a certain topic. According to Uzuner et al. \cite{uzuner2009machine}, assertions can be classified as Positive, Negative, Uncertain and Alter-Association assertions (Table \ref{InteractionElementsTable}).  
 
 \subsection{Questions}
-Questions can be used to make sure that the provided information is required by the user. An example is when Poncho, the weather forecasts chatbot, asks users about the city for which they want to know the weather. If the user would like to know the weather in Manhattan, Poncho will ask the following verification question, ``New York, NY? Right now it's mostly cloudy there. Is that the right city?" and after the user clicks "yes" Poncho will give the complete forecast (Figure \ref{FigureVerificationQuestion}).
+Questions can be used to make sure that the provided information is required by the user. According to Bodoff et al. \cite{bodoff2016question}, questions can be clasified as three topologies, (a) Open versus Closed; (b) Concept Completion, Enablement, Instrumental/procedural, and Quantification; and (c) Identity versus non-Identity questions (Table \ref{InteractionElementsTable}). 
+
+An example of a question is when Poncho, the weather forecasts chatbot, asks users about the city for which they want to know the weather. If the user would like to know the weather in Manhattan, Poncho will ask the following verification question, ``New York, NY? Right now it's mostly cloudy there. Is that the right city?" and after the user clicks "yes" Poncho will give the complete forecast (Figure \ref{FigureVerificationQuestion}). 
 
 %Open and close questions: https://robinhq.com/customer-service-guide/human-conversation/
 
@@ -285,25 +290,20 @@ According to Reichman~\cite{reichman1985getting}, in a usual conversation many d
 
 \textbf{Designers should think about the different possible flows that the user may go in and the different possible flows that the chatbot may use.} Users and chatbots can change the topic of the conversation at any point. Shifting the conversation topic should be made carefully to avoid misunderstandings. For example, ShopBot\footnote{https://shopbot.ebay.com/} from Ebay helps users to select a pair of jeans, and after selecting the desired jeans, the user can also ask for a blouse from a different department (Figure \ref{FigureEbay}). It is important to understand that the purpose of the conversation did not change, the purpose remains the same (buying clothes). However, the flow of the conversation switch from buying jeans to blouses from a different department.
 %Another example is Poncho, users can ask him about the weather, and then change the conversation's topic and have a little chat with Poncho about astrology. 
-
 \begin{figure}
 \centering
-\includegraphics[scale=0.5]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/ShopBot.png}
+\includegraphics[scale=0.4]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/ShopBot.png}
 \caption{ShopBot Ebay}
 \label{FigureEbay}
 \end{figure}
-
 %* For instance, the design of the chatbots can twist the conversation from talking about a certain graph and when the user has selected the graph, to what color is better to use /find another example/. Shifting the conversation topic should be made carefully to avoid misunderstandings.  * 
-
 Chatbots may change the flow of a conversation according to the chatbot purpose. An example of this is Rescue.io (Figure \ref{FigureRescue}). This chatbot was created to aim emergency situations. "During an emergency when the user cannot phone someone for help, Rescue can quickly alert the user's emergency contacts to what is happening and where the user is so they can help"~\cite{Rescue}. Rescue will lead the conversational flow by asking a series of questions about the type of emergency that the user has. 
-
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/rescued.png}
 \caption{Rescue Emergency Chat Service}
 \label{FigureRescue}
 \end{figure}
-
 %after 2 script parrafos
 %However, designers should be careful of not letting the chatbot lose the feeling of a normal conversation. Some conversations might be structured too rigidly; for this reason they seem to be a command line, instead of giving the user the conversational feeling that chatbots should have. The flow of the conversation should be natural and evident. 
 %------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -314,7 +314,7 @@ Chatbots may change the flow of a conversation according to the chatbot purpose.
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.4]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/PonchoHelp.png}
+\includegraphics[scale=0.5]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/PonchoHelp.png}
 \caption{Poncho Weather Forecast Chatbot}
 \label{FigureCommunicationCapabilities}
 \end{figure}

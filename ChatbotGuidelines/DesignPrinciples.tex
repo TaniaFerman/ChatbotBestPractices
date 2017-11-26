@@ -221,38 +221,46 @@ The farewell section is the last part of a conversation. By this phase, the user
 %------------------------------------------------------------------------------------------------------------------------------------------------------
 
 \section{Chatbot Interaction Elements}
-According to Allen et al.~\cite{allen1978conversation}, Interaction can be defined as the "reciprocal process incorporating a variety of verbal and somatic components which are organized into meaningful action segments transmitted from one actor to the other in an oscillatory pattern." The authors claim that \textbf{the speaker can emit several elements, such as assertions, questions, and support in a conversation.} Table \ref{InteractionElementsTable} contains the elements that both humans and chatbots may emit when they are interacting with each other. The following interaction elements are described from the chatbot's perspective. 
+According to Allen et al.~\cite{allen1978conversation}, Interaction can be defined as the "reciprocal process incorporating a variety of verbal and somatic components which are organized into meaningful action segments transmitted from one actor to the other in an oscillatory pattern." The authors claim that \textbf{the speaker can emit several elements, such as assertions, questions, and support in a conversation.} The interaction elements can be emitted by humans and chatbots when they are interacting with each other. The following interaction elements are described from the chatbot's perspective. 
 
 %https://www.socialresearchmethods.net/kb/questype.php
 
-\begin{table}[]
-\centering
-\begin{tabular}{lllll}
-\hline
-\textbf{Assertions}    & \textbf{Questions}     & \textbf{Support}   \\
-\hline
-Positive & Open-ended Questions & Help      \\
-Negative         &   Close-ended Questions       & Data Insights.  \\
-Uncertain             &   Concept Completion      &       \\
-Alter-Association                    &   Enablement    &       \\
-                       &  Instrumental/procedural  &       \\    
-                     & Quantification  &       \\    
-                       & Identity Questions  &       \\    
-                      &  Non-Identity Questions  &       \\    
-     \hline                   
-\end{tabular}
-\caption{Interaction elements}
-%\refstepcounter
-\label{InteractionElementsTable}
-\end{table}
-
 \subsection{Assertions}
-Assertions are affirmations or messages that the chatbot gives to the user; assertions determine the content of the conversation and allow the listener to increase his or her knowledge about a certain topic. According to Uzuner et al. \cite{uzuner2009machine}, assertions can be classified as Positive, Negative, Uncertain and Alter-Association assertions (Table \ref{InteractionElementsTable}).  
+Assertions are affirmations or messages that the chatbot gives to the user; assertions determine the content of the conversation and allow the listener to increase his or her knowledge about a certain topic. 
 
 \subsection{Questions}
-Questions can be used to make sure that the provided information is required by the user. According to Bodoff et al. \cite{bodoff2016question}, questions can be clasified as three topologies, (a) Open versus Closed; (b) Concept Completion, Enablement, Instrumental/procedural, and Quantification; and (c) Identity versus non-Identity questions (Table \ref{InteractionElementsTable}). 
+Questions can be used to make sure that the provided information is required by the user. Stivers \cite{stivers2010overview} classify questions according to the expected answer and according to the question's goal. Below are described the two question's classifications. 
 
-An example of a close-ended question is when Poncho, the weather forecasts chatbot, asks users about the city for which they want to know the weather. If the user would like to know the weather in Manhattan, Poncho will ask the following verification question, ``New York, NY? Right now it's mostly cloudy there. Is that the right city?" and after the user clicks "yes" Poncho will give the complete forecast (cf. Fig. \ref{FigureVerificationQuestion}). 
+\subsubsection{Questions based on the response}
+
+According to Stiver et al,\cite{stivers2010overview} Questions should be designed by the type of answer the speaker wants to get. For example, if the speaker what to have a yes or no response, a clausal answer or the choose between two options.
+\begin{enumerate}
+\item Polar or close-ended questions: Polar questions are formulated to get the confirmation or disconfirmation of a topic. Thus, this kind of questions is answered with only two options, yes or no (True or false). Polar questions are subdivided in interrogative, Tag and Declarative. 
+\begin{itemize}
+\item Interrogative: Interrogative questions are stuttered as follows: the operator then the subject, this kind of questions are pronounced by a rising intonation.
+\item Tag: Tag questions has a bigger extend function than other types of questions. \cite{quirk2010comprehensive}. This type of questions is not that common in the English language. Some examples are \textit{isn’t she?, did she?, right?, huh?} 
+\item Declarative: Declarative questions are pronounced with a casual tone in spontaneous or casual conversations.
+\end{itemize}
+An example of a polar question is when Poncho, the weather forecasts chatbot, asks users about the city for which they want to know the weather. If the user would like to know the weather in Manhattan, Poncho will ask the following verification question, ``New York, NY? Right now it's mostly cloudy there. Is that the right city?" and after the user clicks "yes" Poncho will give the complete forecast (cf. Fig. \ref{FigureVerificationQuestion}). 
+\item Q-word (or content questions): Q-word questions are asked when a “part of a proposition is presupposed, and the utterance seeks the identity of one element of the proposition”\cite{stivers2010coding}. This type of questions use the following words: \textit{who, what (adjective values), where (location), when (time), why (cause) and how (manner)}. In some conversations, Q-word questions may be preceded by the words and, but or so. For example “So why didn’t Laura eat with him? 
+\item Alternative: Alternative questions are occasionally used in English conversations. This type of questions joins two complete questions by using the word \textit{or}. Therefore, the answer to this type of questions is the election between two restricted set of alternatives. For instance, You would like to eat flour tortillas or you prefer to eat corn tortillas?
+\end{enumerate}
+
+\subsubsection{Questions based on the objective goal}
+Stivers also gives a classification of the social action (objective/goal) that the questions are intended.  
+\begin{enumerate}
+\item Request of information: Questions are formulated to request information when they are asked in order to get information and no other primary action is implied in the question. In other words, questions like “Are you busy tonight” hide another primary action that may be an invitation request. 
+\ item Other initiation of repair: Tag questions are formulated to other initiation of repair. The objective is to get a partial repeat. For example,  isn’t she?
+\item Request for confirmation: Declarative questions may be formulated to confirm some information. For instance, ‘So you’re coming tomorrow night’’. 
+A chatbot may ask to confirm its correctness before carried out a process. \cite{Shevat2017}
+According to Shevat \cite{Shevat2017}, there are two types of confirmation that bots may use, explicit and implicit. Explicit is when the chatbot asks for the correctness about an input provided by the user. They are also used to allow the chatbot to ask the user permission to carried out a task (process).  On the other hand, implicit confirmation is when the chatbot confirms to the user that it receives the user’s input. 
+\item Assessment: this social action is carried out to seek an agreement, an example of this is “Isn’t it beautiful out today" 	
+\item Suggestion/Offer/Request: This category of questions are formulated to suggest, propose and offer something to a person. They also included questions that are being asked to request something. For example “Do you want some chocolate cake?” 
+\item Rhetorical question: This question does not seek for an answer. They are being created to express an opinion. For example, ‘‘Everything comes out in the wash doesn’t it? said by a husband to his wife after he has spilled something on the table cloth” \cite{stivers2010coding}.
+\item Outloud: Outloud questions are not formulated for someone in particular, they just express a thought outloud. (e.g., “Now where did I park the car”.
+\end{enumerate}
+
+Another type of questions is open-ended questions. This type of questions allows individuals to spontaneously give an answer, avoiding the bias of giving them alternatives that may influence their response \cite{reja2003open} . 
 
 %Open and close questions: https://robinhq.com/customer-service-guide/human-conversation/
 
@@ -270,10 +278,20 @@ However, designers should avoid open-ended questions, because users may respond 
 % https://chatbotsmagazine.com/cheat-sheet-all-facebook-chatbot-interactions-4b14e4e00178
 
 \subsection{Support}
-Finally, support is any extra help that the chatbot gives to the user. This help should be straightforward for users. Commonly, users only need to type the word ``\textit{help}" or the command ``\textit{/help}" in order to get additional support from the chatbot. When an error has occurred the chatbot should automatically ask users if they need any help. Besides, chatbots can also give feedback as a part of the conversational support, or provide meaningful insights about the performed task or the conversation that the user and the chatbot had.\\[0\baselineskip] In addition, users should be able to ask for extra information at any point in the conversational flow.
-\\
-\\
+Finally, support is any extra help that the chatbot gives to the user. Support can be divided in three categories, help, feedback and data insights.
+\begin{enumerate}
+\item Help: the help provided by the chatbot should be straightforward for users, it should give a possible solution when the user get stuck in the conversation. Chatbots should have a specific script about how to use the chatbot. Commonly, users only need to type the word ``\textit{help}" or the command ``\textit{/help}" in order to get additional support from the chatbot. When an error has occurred the chatbot should automatically ask users if they need any help. 
+
+\item Feedback: Chatbots can also give feedback as a part of the conversational support, or provide meaningful insights about the performed task or the conversation that the user and the chatbot had. According to Allen et al [26] Feedback may go from the receiver to the emitters, in this case, the receiver emits cue responses that allow the emitter to incorporate the feedback into the monitoring process. The feedback may also go from the emitter to the receiver, in this case, the verbal cues came as a response to cue responses from the emitter. 
+Besides, chatbots may ask for a feedback from users in order to get an idea of the chatbot performance. Questions like “the provided information was useful” may give an idea to designers of the level of user’s satisfaction. 
+
+\item Data insights: Chatbots may be used to provide additional information about the data provided by the user. One example of this is Watson Virtual Agent \cite{SuzorCustomerAnalytics}. This chatbot allow business to have rich insights about the customers that are using the chatbot for customer service. Customers chat with Watson, while business gets the data insights about the main customers’ needs and how many customers are using the bot. 
+\end{enumerate}
+
+
 Besides regular human conversational elements, \textbf{chatbots may also understand command expressions.} These statements are commands that users write to interact with the chatbot using domain specific knowledge. 
+
+
 
 %\section{Conversational Script}
 %The conversational script should take into account the following elements: timing, being an active participant and an active listener, and avoiding over sharing information.
@@ -293,9 +311,9 @@ According to Allen et al.~\cite{allen1978conversation}, in order to have a meani
 \end{figure}
 %------------------------------------------------------------------------------------------------------------------------------------------------------
 \section{Chatbot Conversation Flows}
-According to Reichman~\cite{reichman1985getting}, in a usual conversation many details are being shared. To avoid an incoherent conversational flow, it is necessary that listeners understand when and why the conversational topic has been changed. \textbf{The conversational chatbot flow should follow a certain order. This means that after a particular information was given, the chatbot should perform a certain task.} 
+According to Reichman~\cite{reichman1985getting}, in a usual conversation many details are being shared. To avoid an incoherent conversational flow, it is necessary that individuals understand when and why the conversational topic has been changed. \textbf{The conversational chatbot flow should follow a certain order. This means that after a particular information is given, the chatbot should perform certain task.} 
 
-\textbf{Designers should think about the different possible flows that the user may go in and the different possible flows that the chatbot may use.} Users and chatbots can change the topic of the conversation at any point. Shifting the conversation topic should be made carefully to avoid misunderstandings. For example, ShopBot\footnote{https://shopbot.ebay.com/} from Ebay helps users to select a pair of jeans, and after selecting the desired jeans, the user can also ask for a blouse from a different department (cf. Fig. \ref{FigureEbay}). It is important to understand that the purpose of the conversation did not change, the purpose remains the same (buying clothes). However, the flow of the conversation switch from buying jeans to blouses from a different department.
+\textbf{Designers should think about the different possible flows that the user may follow and the different possible flows that both the chatbot and the individual may use.} Users and chatbots can change the topic of the conversation at any point. Shifting the conversation topic should be made carefully to avoid misunderstandings. For example, eBay's ShopBot\footnote{https://shopbot.ebay.com/} helps users selecting a pair of jeans, and after that, the user can also ask for a blouse from a different department (cf. Fig. \ref{FigureEbay}). It is important to understand that the purpose of the conversation did not change, the purpose remains the same, that is buying clothes. However, the flow of the conversation switches from buying jeans to blouses from a different department.
 %Another example is Poncho, users can ask him about the weather, and then change the conversation's topic and have a little chat with Poncho about astrology. 
 \begin{figure}
 \centering
@@ -304,7 +322,7 @@ According to Reichman~\cite{reichman1985getting}, in a usual conversation many d
 \label{FigureEbay}
 \end{figure}
 %* For instance, the design of the chatbots can twist the conversation from talking about a certain graph and when the user has selected the graph, to what color is better to use /find another example/. Shifting the conversation topic should be made carefully to avoid misunderstandings.  * 
-Chatbots may change the flow of a conversation according to the chatbot purpose. An example of this is Rescue.io (cf. Fig. \ref{FigureRescue}). This chatbot was created to aim emergency situations. "During an emergency when the user cannot phone someone for help, Rescue can quickly alert the user's emergency contacts to what is happening and where the user is so they can help"~\cite{Rescue}. Rescue will lead the conversational flow by asking a series of questions about the type of emergency that the user has. 
+Chatbots may change the flow of a conversation according to the chatbot purpose, an example of this is Rescue.io (cf. Fig. \ref{FigureRescue}). This chatbot was created to aim emergency situations. According to Clegg "during an emergency when the user cannot phone someone for help, Rescue can quickly alert the user's emergency contacts to what is happening and where the user is so they can help"~\cite{Rescue}. Rescue leads the conversational flow by asking a series of questions about the type of emergency that the user has. 
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/rescued.png}
@@ -317,7 +335,7 @@ Chatbots may change the flow of a conversation according to the chatbot purpose.
 
 \section{Chatbot's Communication Limitations}
 
-\textbf{Chatbots should have a delimited script of the possible scenarios (cf. Fig. \ref{FigureMindMap}). If a user wants to go through an unknown topic for the chatbot, the chatbot has to specify to the user that this question goes beyond its knowledge. Therefore, designers need to not only consider what the chatbot can do, but also what it cannot do, in order to set boundaries.} For example, when a user asks Poncho, the weather chatbot, something that it was not created to answer, Poncho replies with: ``Oops, I didn't catch that. For things I can help you with, type \textit{help}"~\cite{HeuristicsWebPage} (cf. Fig. \ref{FigureCommunicationCapabilities}). Chatbots need to gracefully establish limits to users that want to go beyond the chatbot's knowledge.  
+\textbf{Chatbots should have a delimited script of the possible scenarios (cf. Fig. \ref{FigureMindMap}). If a user wants to go through an unknown topic for the chatbot, it is expected to notify the user that this question goes beyond its knowledge. Therefore, designers need to not only consider what the chatbot can do, but also what it cannot do, in order to set boundaries.} For example, when a user asks Poncho, the weather chatbot, something that it was not created to answer, Poncho replies with: ``Oops, I didn't catch that. For things I can help you with, type \textit{help}"~\cite{HeuristicsWebPage} (cf. Fig. \ref{FigureCommunicationCapabilities}). Chatbots need to gracefully establish limits to users that want to go beyond the chatbot's knowledge.  
 
 \begin{figure}
 \centering

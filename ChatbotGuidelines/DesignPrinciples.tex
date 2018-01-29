@@ -63,12 +63,13 @@ Therefore, it is important for designers who want to create chatbots, to find a 
 
 This project consists of three main phases. \textbf{The first phase} comprises the creation of a set of best practices to design chatbots effectively, based on well known online best practices. In order to develop a good set of best practices, it will be necessary to read blogs and best practices online (cf. Fig. \ref{FigureReferencetable}). Besides, it is also necessary to select and use the most popular chatbots. 
 %See~(\ref{FigureReferencetable}).
-\textbf{The second phase} is the mock-up of a visualization chatbot designed according to the best practices of the first phase. The visualization interface will be mimicked by using the \textit{Wizard of Oz} simulation technique. 
-\begin{displayquote}
-According to Hutchby~\cite{Hutchby2001} \textit{``Wizard of Oz} is a technique that involves humans masquerading as computer systems which are in the process of development, while the users recruited to test the ``system" are led to believe that it is actually a computer with which they are interacting.  The simulation is used as a test-bed in which ideas about how the system should operated, as well as how humans may interact with the system, can be explored by designers." 
-\end{displayquote}
 
-Finally, \textbf{the third phase} is the case study. This study will be carried out to evaluate the chatbot best practices. Therefore, if the chatbot fulfils the user requirements in the case study, this is a clear indication that the best practices are adequate for the creation of a chatbot.
+\textbf{The second phase} is the creation of a customer support chatbot, designed according to the best practices of the first phase. The chatbot will be designed to support the customer service of Shift. 
+Shift is a consumer application that enables users to improve their email productivity. Users can have their Gmail, Outlook and Microsoft 365 account in one application. In addition, Shift also allows extensions and apps that can be used  in the work environment. Therefore, users can switch between emails, apps, and extensions, creating  an organized work environment, thus allowing them to be more efficient.  
+
+Shift is an application created by Redbrick. Redbrick is a software company founded in 2011 that develops software for customers and businesses. 
+
+Finally, \textbf{the third phase} is the case study. This study will be carried out to evaluate the best practices and the chatbot. Developers from Redbrick will evaluate them and give feedback. After this, the best practices and the chatbot will be updated in order to address the possible flaws that the developers found. At the end, the developers will have a final evaluation. 
 
 
 % the chatbots' efficiency in interaction with the users in order to create effective visualizations.
@@ -79,11 +80,9 @@ Finally, \textbf{the third phase} is the case study. This study will be carried 
 %PARAGRAPH TO DESCRIBE THE TWO DIFFERENT PERSONAS. 
 \subsection*{Project Personas}
 The description of a persona, is used by designers to have an archetypal user of a system. Thus, the user-persona will illustrate the specific needs and goals that the system will satisfy~\cite{cooper2004inmates}.
-This project has two personas that allow to understand the user type for the best practices and the visualisation chatbot.  
+This project has one personas that allow to understand the user type for the best practices and the chatbot.  
 
-The first user-persona is defined as the type of person that will use the Chatbot's best practices (cf. Fig. \ref{FigurePatricia}). \textit{``Patricia"} is a developer who works in a startup company in Victoria, BC. She holds a Computer Science degree and has good programming skills. However, Patricia does not have experience designing chatbots. She lacks skills in and knowledge of software design. She has little time and lacks motivation to read blogs and best practices online. In addition, she finds the amount of chatbots blogs overwhelming. Therefore, her goal is to find a set of guidelines that help her to design a chatbot effectively. 
-
-The second user-persona is the type of person that will use the visualization chatbot (cf. Fig. \ref{FigureLaura}). \textit{``Laura"} is a Visualization novice who works as a project manager in a mid-sized company in Victoria, BC. She has managed several projects successfully. However, she does not have any background creating visualizations. On a daily basis, she uses her computer, iPad, and mobile phone to work. She has problems in creating visualizations to explain her ideas and project results. She has little time to devote to the visualization creation process, and struggles in learning new technologies. Besides, she finds the amount of visualization tools overwhelming. Laura would like to find a good way, by using her mobile phone, to create an effective visualization. In addition, she would like to get help in the visualization creation and data analysis process.  
+The user-persona is defined as the type of person that will use the Chatbot's best practices (cf. Fig. \ref{FigurePatricia}). \textit{``Patricia"} is a developer who works in a startup company in Victoria, BC. She holds a Computer Science degree and has good programming skills. However, Patricia does not have experience designing chatbots. She lacks skills in and knowledge of software design. She has little time and lacks motivation to read blogs and best practices online. In addition, she finds the amount of chatbots blogs overwhelming. Therefore, her goal is to find a set of guidelines that help her to design a chatbot effectively.  
 
 
 \begin{landscape}
@@ -111,13 +110,6 @@ The second user-persona is the type of person that will use the visualization ch
 
 \textbf{Best Practices for designing a Chatbot:} The best practices are created to allow people like Patricia to design an effective chatbot. These best practices give developers the most important aspects about the chatbot's design. Therefore, from the beginning they will have a specific structure to follow how to design their chatbot. Figure \ref{FigureReferencetable} shows the 16 best practices for the creation of a chatbot. The best practices has 3 different main areas based on the Chatbot purpose: User-Chatbot communication, Chatbot features, and Human factors concerns. Every area has a specific colour to encode data (show categories). The Figure also listed the different online sources (e.g., blogs) which the best practices were collected. 
 
-\begin{figure}
-\centering
-\includegraphics[scale=0.4]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/LaTexImages/PersonaProject.png}
-\caption{Characteristics of the Chatbot's Persona}
-\label{FigureLaura}
-\end{figure}
-
 \begin{figure}[p]
     \makebox[\linewidth]{
         \includegraphics[width=1.6\linewidth]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/BestPracticesDiagram.png}
@@ -126,17 +118,17 @@ The second user-persona is the type of person that will use the visualization ch
     \label{FigureBestPracticeDiagram}
 \end{figure}
 
-\textbf{Chatbot:} The goal of the chatbot is to help people like Laura to create a meaningful visualization about their data. Laura can use natural language statements in order to communicate with the chatbot. In response, the chatbot will provide her with several visualization options.
+\textbf{Chatbot:} The goal of the chatbot is to help in the customer support process of a software company. Customers can use natural language statements in order to communicate with the chatbot. In response, the chatbot will provide them the most relevant answer for their request.
 
-%Alexey's feedback: (on Visualizations: to communicate or to explore the data) 
-\textbf{Chatbot's Tasks on Visualization:} The Visualization goal of the chatbot is to help users to analyse data by using visual context images (graphs). The chatbot will offer different options to visualize data. The options will be oriented to allow users to see patterns, trends, and correlations that might not be detected by the use of data tables or Excel sheets. Therefore, the chatbot will allow users to easily analyse their data in order to have deeper insights.  
+\textbf{Chatbot's Tasks on Customer support:} According to Cui et al.~\cite{cui2017superagent} ``Customer service plays an important role in an organization's ability to generate income and revenue. It is often the most resource-intensive department within a company, consuming billions of dollars a year to change the entire perception customers hold." 
 
-The creation of a Visualization chatbot allows us to test the best practices of this project's first phase. A visualization chatbot was selected because Visualization is an emerging area that "allows people to analyse data when they don't know exactly what questions they need to ask in advance"\cite{munzner2014visualization}. Therefore, Visualizations help people in their decision making process by giving them evidence about the most important insights of their data.
+Customer support is not a simple task, staff need to have an accurate knowledge of the information given to the users, and at the same time be professional and friendly. Even when customers are giving a negative feedback the staff needs to behave appropriately and try to deal with the complaint in the best manner they can. Another important aspect of customer services that is very hard to accomplish is to give users 24/7 service. This last aspect is difficult to have because usually employeesare hired for an 8 hours schedule. International companies have to deal with giving feedback to customers within different time zones, making the customer service process expensive. 
 
-Bringing chatbots into the visualization world allows users to get help to explore and analyse data, making the visualization creation process easier and more straightforward.  One example of Chatbots used to help people to visualize data is Iris~\cite{Iris}. Iris is a data science chatbot that allow users to get help with data science workflows (e.g. get a Person Correlation from a dataset). Another special task for Iris is its ability to create simple graphs from the user data (e.g. scatter plots, bar charts).    
+A great solution for all these problems is chatbots. Chatbots can deal with repetitive tasks and give customers a 24/7 service. Companies can expense fewer resources in staff by adding a chatbot to the customer support. Therefore, the staff will manage only the tasks that the chatbot is not capable to deal. Making their job more efficient and less time-consuming.
 
+The customer support goal of the chatbot is to help users get the assistant that they need. The chatbot needs to answer the customer questions in the most accurate way. At the beginning, the chatbot will offer different options of the questions that can be answered. This will function as a menu of the information that the chatbot can convey. 
 
-
+The creation of a customer support chatbot allows us to test the best practices of this project's first phase. A customer support chatbot was selected because providing online customer service is an emerging area that allows companies to improve their communication with customers. One example of a chatbot used for customer support is Super Agent\cite{cui2017superagent}. Super Agent is a customer service chatbot that replies customer questions base on a Questions and Answers engine that contains the information regarding the company's product.     
 
 %\newpage
 %\null\vskip 2em\begin{Chatbot's Best Practices}
@@ -221,7 +213,7 @@ The farewell section is the last part of a conversation. By this phase, the user
 %------------------------------------------------------------------------------------------------------------------------------------------------------
 
 \section{Chatbot Interaction Elements}
-According to Allen et al.~\cite{allen1978conversation}, Interaction can be defined as the "reciprocal process incorporating a variety of verbal and somatic components which are organized into meaningful action segments transmitted from one actor to the other in an oscillatory pattern." The authors claim that \textbf{the speaker can emit several elements, such as assertions, questions, and support in a conversation.} The interaction elements can be emitted by humans and chatbots when they are interacting with each other. The following interaction elements are described from the chatbot's perspective. 
+According to Allen et al.~\cite{allen1978conversation}, Interaction can be defined as the ``reciprocal process incorporating a variety of verbal and somatic components which are organized into meaningful action segments transmitted from one actor to the other in an oscillatory pattern." The authors claim that \textbf{the speaker can emit several elements, such as assertions, questions, and support in a conversation.} The interaction elements can be emitted by humans and chatbots when they are interacting with each other. The following interaction elements are described from the chatbot's perspective. 
 
 %https://www.socialresearchmethods.net/kb/questype.php
 
@@ -518,7 +510,20 @@ Therefore, designers should treat users' data ethically, and inform if their inf
 %2visualizations:
 %https://www.empirecenter.org/publications/empire-states-half-century-exodus/
 
-\section*{\centering{Mock-up of a Visualization Chatbot}}
+\section*{\centering{Customer Support Chatbot}}
+
+An early meeting with Nadia Tatlow, the Manager of Marketing at Redbrick, was carried out to gather information about the Shift users' demographics.  According to Tatlow, the shift users are mostly men (90\%) between the age of 18 to 44 years old. The users are mostly from the US and they are early adopters that have a good understanding of design and different software technologies (Tech-savvy). They use Shift in order to become more efficient in their jobs and have a better use of their time.  Figure \ref{ShiftDemographics} shows two bar charts, the first chart shows the gender and age demographics, and the second bar chart exhibit the time when shift customer uses Shift. Besides a choropleth map is being displayed, this graph conveys the different regions where Shift users live. 
+
+The chatbot will be designed to aim that target market and demographics. The chatbot should use words, expressions, and jokes relevant to the target market. Besides, the chatbot should address the most frequent questions asked by them. 
+
+Customer Support chatbot: 
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{/Users/MariaFerman/Desktop/ToRead(Project:Bots)/imgDesignfesst/ShiftDemographics.png}
+\caption{Shift Demographics}
+\label{ShiftDemographics}
+\end{figure}
 
 %DATASET with 2 visualization examples:
 %2visualizations:
